@@ -60,17 +60,20 @@ foreach (var item in Moves)
 
 }
 
+Console.WriteLine($"Player 1's (elf) move : {player1_move}");
+Console.WriteLine($"Player 2's (me) move : {player2_move}");
+
 if (player1_score != player2_score)
 {
     if (player1_score > player2_score)
     {
         player1_score += 6;
-        Console.WriteLine($"Player 1 Wins!! with {player1_score} and Player 2 lost with a score {player2_score}");
+        Console.WriteLine($"Player 1 wins, with a score {player1_score} and Player 2 lost with a score {player2_score}");
     }
     else
     {
         player2_score += 6;
-        Console.WriteLine($"Player 2 Wins!! with {player2_score} and Player 1 lost with a score {player1_score}");
+        Console.WriteLine($"Player 2 wins, with a score {player2_score} and Player 1 lost with a score {player1_score}");
     }
 }
 else
